@@ -47,7 +47,7 @@ header {
 .promo_bar a {
   color: white;
   text-decoration: underline;
-  margin-left: 5px;
+  padding-left: 5px;
 }
 
 /* Основной блок с логотипом и иконками */
@@ -63,27 +63,30 @@ header {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.header_icons {
+  display: flex;
+}
+
 .header_icons a {
-  display: inline-flex;
-  margin-left: 15px;
   color: #333;
   text-decoration: none;
+  padding: 0px 0px 0px 30px;
 }
 
 .header_icons img {
-  margin-right: 5px;
   width: 20px;
   height: 20px;
 }
+
 .favorites_wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 .favorites_counter {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -5px;
   background-color: red;
   color: white;
   font-size: 3px;
@@ -91,8 +94,6 @@ header {
   padding: 1px 2px;
   display: none; /* скрыта по умолчанию */
 }
-.favorited {
-  filter: brightness(0.2);}
 
 /* Навигация */
 .nav_container {
@@ -116,7 +117,7 @@ header {
 
 /* Видео-баннер */
 .video-banner {
-  margin-top: 100px; /* для отступа от header */
+  top: 100px; /* для отступа от header */
   width: 100%;
   height: 650px;
   position: relative;
@@ -132,7 +133,7 @@ header {
 .filters {
   display: flex;
   gap: 10px;
-  margin: 20px;
+  margin: 140px 20px 20px;
   justify-content: center;
 }
 
@@ -199,8 +200,8 @@ header {
 }
 
 .card_price {
-  font-size: 16px; 
-  font-weight: bold; 
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .card_favorite_icon {
@@ -275,11 +276,15 @@ header {
 
 .social-section {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.social-icons {
+  padding: 5px;
 }
 
 .social-icons a {
-  margin: 0 8px;
+  padding: 0 8px;
 }
 
 .social-icons img {
@@ -287,29 +292,15 @@ header {
   height: 24px;
 }
 
-.account-locator {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-
-.account,
-.locator {
-  display: flex;
-  gap: 10px;
-}
-
 .footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 30px 0;
   flex-wrap: wrap;
 }
 
 .footer-links h4 {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-links ul {
@@ -318,7 +309,7 @@ header {
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .footer-links a {
@@ -332,17 +323,17 @@ header {
 
 .payment-section {
   text-align: center;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .payment-icons img {
-  margin: 5px 10px;
-  height: 24px;
+  padding: 5px 10px;
+  height: 35px;
 }
 
 .mobile-site {
   text-align: center;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .mobile-site a {
@@ -388,4 +379,3 @@ html {
   gap: 4px;
   align-items: flex-start;
 }
-
